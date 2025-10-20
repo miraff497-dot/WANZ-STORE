@@ -318,6 +318,89 @@
             color: var(--text-light);
         }
 
+        /* Panel list styling */
+        .panel-list {
+            background: rgba(20, 20, 40, 0.7);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+        }
+
+        .panel-list-title {
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .panel-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .panel-item:last-child {
+            border-bottom: none;
+        }
+
+        .panel-spec {
+            color: var(--text-bright);
+        }
+
+        .panel-price {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .panel-info {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            color: var(--text-bright);
+        }
+
+        .reseller-card {
+            background: linear-gradient(135deg, rgba(40, 40, 60, 0.9), rgba(50, 30, 70, 0.9));
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reseller-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .reseller-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        .reseller-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+        }
+
         /* Contact section */
         .contact-item {
             display: flex;
@@ -547,7 +630,115 @@
 
             <!-- Products Section -->
             <section id="products" class="fade-in">
-                <h2 class="section-title">Produk Kami</h2>
+                <h2 class="section-title">✦━── ⌬ OPEN PANEL LIST ⌬ ──━✦</h2>
+                
+                <!-- Panel List -->
+                <div class="panel-list">
+                    <div class="panel-list-title">💻 LIST PANEL PRIVAT</div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM 5GB</div>
+                        <div class="panel-price">Rp. 1.000</div>
+                    </div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM 6GB</div>
+                        <div class="panel-price">Rp. 2.000</div>
+                    </div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM 7GB</div>
+                        <div class="panel-price">Rp. 3.000</div>
+                    </div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM 8GB</div>
+                        <div class="panel-price">Rp. 4.000</div>
+                    </div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM 9GB</div>
+                        <div class="panel-price">Rp. 5.000</div>
+                    </div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM 10GB</div>
+                        <div class="panel-price">Rp. 6.000</div>
+                    </div>
+                    <div class="panel-item">
+                        <div class="panel-spec">RAM UNLIMITED</div>
+                        <div class="panel-price">Rp. 8.000</div>
+                    </div>
+                    
+                    <div class="panel-info">
+                        <p>> SPEK VPS RESSELER PRIVAT PANEL r16c8</p>
+                        <p>> SPEK VPS RESELLER PANEL PUBLIC/ADP/OWN/TK r16c4</p>
+                        <p>> SERVER RESELLER DAN ADMIN BEDA VPS JADI AMAN</p>
+                    </div>
+                </div>
+                
+                <!-- Reseller Panel Privat -->
+                <div class="reseller-card">
+                    <h3 class="reseller-title">🛒 OPEN RESELLER PANEL PRIVAT</h3>
+                    <div class="reseller-price">💵 Harga : Rp. 5.000</div>
+                    
+                    <ul class="benefits-list">
+                        <li>Free SC Cpanel + Pushkontak</li>
+                        <li>Free SC Cpanel Tele</li>
+                        <li>Keamanan Anti Colong Session/Script</li>
+                        <li>Data Off? Server Tetep Online</li>
+                        <li>Admin Di Server Cuma Gua</li>
+                        <li>Permanen</li>
+                        <li>Bisa jasa pasang bot</li>
+                        <li>Bisa bikin & jual panel</li>
+                        <li>Full support selamanya</li>
+                        <li>Dilarang Rusuh Kalo Join</li>
+                    </ul>
+                    
+                    <div class="text-center mt-4">
+                        <a href="#contact" class="btn-custom">Beli Sekarang</a>
+                    </div>
+                </div>
+                
+                <!-- Reseller Panel Public -->
+                <div class="reseller-card">
+                    <h3 class="reseller-title">🛒 OPEN RESELLER PANEL PUBLIC</h3>
+                    <div class="reseller-price">💵 Harga : Rp. 2.000</div>
+                    
+                    <ul class="benefits-list">
+                        <li>Free SC Cpanel + Pushkontak</li>
+                        <li>Free SC Cpanel Tele</li>
+                        <li>Keamanan Anti Colong Session/Script</li>
+                        <li>Data Off? Server Tetep Online</li>
+                        <li>Admin Di Server Cuma Gua</li>
+                        <li>Permanen</li>
+                        <li>Bisa jasa pasang bot</li>
+                        <li>Bisa bikin & jual panel</li>
+                        <li>Full support selamanya</li>
+                        <li>Dilarang Rusuh Kalo Join</li>
+                    </ul>
+                    
+                    <div class="text-center mt-4">
+                        <a href="#contact" class="btn-custom">Beli Sekarang</a>
+                    </div>
+                </div>
+                
+                <!-- Admin Panel -->
+                <div class="reseller-card">
+                    <h3 class="reseller-title">🛠️ OPEN ADMIN PANEL</h3>
+                    <div class="reseller-price">💵 Harga : Rp. 7.000</div>
+                    
+                    <ul class="benefits-list">
+                        <li>Free SC Cpanel + Pushkontak</li>
+                        <li>Free SC Cpanel Tele</li>
+                        <li>Keamanan Anti Colong Session/Script</li>
+                        <li>Data Off? Server Tetep Online</li>
+                        <li>Permanen</li>
+                        <li>Bisa jasa pasang bot</li>
+                        <li>Bisa bikin & jual panel</li>
+                        <li>Bisa open reseller panel</li>
+                        <li>Full support selamanya</li>
+                        <li>Dilarang Rusuh Kalo Join</li>
+                    </ul>
+                    
+                    <div class="text-center mt-4">
+                        <a href="#contact" class="btn-custom">Beli Sekarang</a>
+                    </div>
+                </div>
                 
                 <!-- Product 1 -->
                 <div class="product-card">
@@ -660,91 +851,6 @@
                         <a href="#contact" class="btn-custom">Beli Sekarang</a>
                     </div>
                 </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <h3 class="product-title">CARI PANEL BUAT RUN BOT?</h3>
-                    <div class="product-price">CHAT GW AJA SINI LIST👇</div>
-                    
-                    <div class="price-list">
-                        <div class="price-item">
-                            <div class="price">500P</div>
-                            <div class="duration">1GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">1K</div>
-                            <div class="duration">2GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">1,5K</div>
-                            <div class="duration">3GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">2K</div>
-                            <div class="duration">4GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">2,5K</div>
-                            <div class="duration">5GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">3K</div>
-                            <div class="duration">6GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">3,5K</div>
-                            <div class="duration">7GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">4K</div>
-                            <div class="duration">8GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">4,5K</div>
-                            <div class="duration">9GB</div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price">5K</div>
-                            <div class="duration">UNLI</div>
-                        </div>
-                    </div>
-                    
-                    <p class="mt-4 text-center fw-bold" style="color: var(--secondary-color);">MINAT? PV TELE</p>
-                    <p class="text-center" style="color: var(--text-bright);">t.me/WANZZSTECU</p>
-                    
-                    <div class="text-center mt-4">
-                        <a href="#contact" class="btn-custom">Beli Sekarang</a>
-                    </div>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <h3 class="product-title">RESS PANEL 5K</h3>
-                    <div class="product-price">PRICE: 5K</div>
-                    
-                    <h4 class="mt-4 mb-3" style="color:
-                    var(--accent-color);">SPEK:yang pastinya no delay,support
-                    semua device,dan super kencang</h4>
-                    <ul class="benefits-list">
-                        <li>PANEL 1GB-UNLI (bebas Create asal di pake) </li>
-                    </ul>
-                    
-                    <div class="text-center mt-4">
-                        <a href="#contact" class="btn-custom">Beli Sekarang</a>
-                    </div>
-                </div>
-                
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <h3 class="product-title">ADP 10K</h3>
-                    <div class="product-price">PRICE: 10K</div>
-                    
-                    <h4 class="mt-4 mb-3" style="color: var(--accent-color);">SPEK PANEL? GACOR</h4>
-                    
-                    <div class="text-center mt-4">
-                        <a href="#contact" class="btn-custom">Beli Sekarang</a>
-                    </div>
-                </div>
             </section>
 
             <!-- Contact Section -->
@@ -805,7 +911,10 @@
                         <div class="payment-method">
                             <h3><i class="fas fa-qrcode"></i> QRIS</h3>
                             <div class="payment-qr">
+                                <!-- Ganti dengan link gambar QR Anda -->
                                 <img src="https://files.catbox.moe/fmjmcx.jpg" alt="QRIS" class="img-fluid">
+                                <!-- Atau gunakan gambar lokal dengan mengomentari baris di atas dan mengaktifkan baris di bawah -->
+                                <!-- <img src="nama-gambar-qr.jpg" alt="QRIS" class="img-fluid"> -->
                             </div>
                             <div class="payment-info">
                                 <p>Scan QR Code di atas untuk pembayaran via QRIS</p>
@@ -825,7 +934,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 WANZ STORE. All rights reserved.</p>
+            <p>&copy; 2023 WANZ STORE. All rights reserved.</p>
             <p>Trusted Digital Products Provider</p>
         </div>
     </footer>
